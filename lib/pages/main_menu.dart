@@ -1,4 +1,5 @@
 import 'package:calculator/components/appbar.dart';
+import 'package:calculator/pages/bmical.dart';
 import 'package:calculator/pages/loancalculatorpage.dart';
 import 'package:calculator/pages/mutualfundspage.dart';
 import 'package:calculator/pages/ppfcalculatorpage.dart';
@@ -8,6 +9,7 @@ import 'package:get/get.dart';
 
 class MainMenu extends StatelessWidget {
   final List<Map<String, dynamic>> menuItems = [
+    {'title': 'BMI Calculator', 'icon': Icons.boy_rounded, 'page': BMICalculatorPage()},
     {'title': 'Loan Calculator', 'icon': Icons.account_balance, 'page': LoanCalculatorPage()},
     {'title': 'PPF Calculator', 'icon': Icons.pie_chart, 'page': PPFCalculatorPage()},
     {'title': 'SIP Calculator', 'icon': Icons.monetization_on, 'page': SIPCalculatorPage()},

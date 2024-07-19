@@ -151,7 +151,7 @@ class PPFCalculatorPage extends StatelessWidget {
         Text('Estimated Pension:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF28ADAB))),
         SizedBox(height: 10),
         Obx(() {
-          final formattedPension = NumberFormat.currency(locale: 'en_US', symbol: '\$').format(controller.totalPension.value);
+          final formattedPension = NumberFormat.currency(locale: 'en_US', symbol: '\#').format(controller.totalPension.value);
           return Text(formattedPension, style: TextStyle(fontSize: 18));
         }),
       ],
